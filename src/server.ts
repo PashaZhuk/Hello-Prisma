@@ -15,7 +15,9 @@ app.use(express.urlencoded({extended:true}))
 
 
 // app.use('/movies', movieRoutes)
-// app.use('/auth', authRoutes)
+app.use('/auth', (req,res)=>{
+    res.json({message:'qqqq'})
+})
 // app.use('/watchlist', watchListRoutes)
 
 
